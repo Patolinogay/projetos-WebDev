@@ -1,0 +1,83 @@
+/* Importando uma fonte mais moderna */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1e1e2e 0%, #313244 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #cdd6f4;
+}
+
+.pai {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    width: 90%;
+    max-width: 450px;
+    text-align: center;
+    height: 580px;
+}
+
+#titulo {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #89b4fa;
+}
+
+.bloco {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.bloco:hover {
+    transform: translateY(-5px);
+}
+
+p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    color: #a6adc8;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #45475a;
+    background: #181825;
+    color: white;
+    margin-bottom: 15px;
+    outline: none;
+    text-align: center;
+}
+
+button {
+    background: #89b4fa;
+    color: #1e1e2e;
+    border: none;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background: #b4befe;
+    transform: scale(1.05);
+}
