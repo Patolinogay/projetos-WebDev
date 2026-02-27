@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#caixa1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+
+}
+#display{
+    border-radius: 8px;
+    width: 180px;
+    padding: 10px;
+}
+#caixa2{
+    display: grid;
+    grid-template-columns: repeat(4, 40px);
+    justify-content: center;
+    gap: 10px;
+}
+.geral{
+    margin-top: 200px;
+    margin-inline: 200px; 
+    border: solid black 1px;
+    border-radius: 10px;
+}

@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora by Elo</title>
+    <link rel="stylesheet" href="calculadora.css">
 </head>
 <body>
-    <div>     
+    <div class="geral">
+    <div id="caixa1">     
         <input type="text" id="display">
     </div>
 
-    <div>
+    <div id="caixa2">
         <button onclick="adicionar('1')">1</button>
         <button onclick="adicionar('2')">2</button>
         <button onclick="adicionar('3')">3</button>
@@ -24,16 +26,14 @@
 
         <button onclick="adicionar('+')">+</button>
         <button onclick="adicionar('-')">-</button>
-        <button onclick="adicionar('x')">x</button>
+        <button onclick="adicionar('*')">x</button>
         <button onclick="adicionar('/')">/</button>
 
         <button onclick="limpar()">C</button>
         <button onclick="calcular()">=</button>
 
-
-
-
-
-    </div>
+    </div><br><br><br>
+ </div>
+     <script src="calculadora.js"></script>
 </body>
 </html>
