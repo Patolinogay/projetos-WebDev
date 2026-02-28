@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conversor de dados</title>
+    <title>Conversor de dados by Elo</title>
     <link rel="stylesheet" href="conversor.css">
 </head>
 <body>
@@ -15,18 +15,25 @@
     <div class="bloco">
         <p>conversor de graus Celsius para Fahrenheint ou vice e versa</p><br>
         <input type="text" id="graus">
+            <select name="temperatura" id="param1">
+                <option value="celcius">celcius</option>
+                <option value="fah">Fahrenheint</option>
+            </select>
 
-        <button onclick="celcius()">Celcius</button>
-        <button onclick="fah()">Fahrenheint</button>
-    </div><br>
+            <button onclick="temp()">converter</button>
+    </div>
 
     <div class="bloco">
         <p>conversor de valor de moeda real para...</p><br>
         <input type="text" id="moeda">
 
-        <button onclick="dolar()">dolar</button>
-        <button onclick="euro()">euro</button>
-        <button onclick="baht()">baht</button>
+        <select name="moeda" id="param2">
+            <option value="dolar">dolar</option>
+            <option value="euro">euro</option>
+            <option value="baht">baht</option>
+        </select>
+        
+        <button onclick="moeda()">converter</button>
     </div>
 </div>
     <script src="conversor.js"></script>

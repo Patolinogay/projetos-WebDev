@@ -11,10 +11,11 @@
 
 }
 #display{
-    border-radius: 8px;
-    width: 180px;
+    border-radius: 10px;
+    width: 200px;
     padding: 10px;
     font-size: 25px;
+    border: none;
 }
 #caixa2{
     display: grid;
@@ -25,20 +26,37 @@
 .geral{
     width: 300px;
     height: 350px;
-    border: solid black 1px;
-    border-radius: 10px;
+    border-radius: 30px;
+    background-color: black;
+    box-shadow: 5px 5px 5px red;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    transition: transform 0.4s ease;
 }
 button{
     padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color:red;
+    border: none;
+    color: white;
 }
 body{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+}
+
+
+button:hover{
+    background-color: black;
+}
+.geral:hover{
+    transform: scale(1.1);
+
 }
