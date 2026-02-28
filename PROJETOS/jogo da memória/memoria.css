@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+    gap: 20px;
+}
+.painel{
+    display: grid;
+    grid-template-columns: repeat(1, 2fr 2fr);
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+}
+
+
+.vermelho, .roxo, .azul, .amarelo{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    border: solid white 1px;   
+}
+    
+
+.vermelho:active{
+    background-color: red;
+}
+.roxo:active{
+    background-color: purple;
+}
+.azul:active{
+    background-color: blue;
+}
+.amarelo:active{
+    background-color: yellow;
+}
