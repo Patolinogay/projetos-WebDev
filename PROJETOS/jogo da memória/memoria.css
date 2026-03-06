@@ -12,9 +12,9 @@ body{
     background-color: black;
     gap: 20px;
 }
-.painel{
+.mesa{
     display: grid;
-    grid-template-columns: repeat(1, 2fr 2fr);
+    grid-template-columns: repeat(2, 1fr);
     gap:10px;
     justify-content: center;
     align-items: center;
@@ -23,23 +23,19 @@ body{
 }
 
 
-.vermelho, .roxo, .azul, .amarelo{
+.painel{
     width: 100%;
     height: 100%;
     border-radius: 30px;
     border: solid white 1px;   
 }
-    
+.piscar{
+    background-color: white !important;
+}
+.vermelho { background-color: red; }
+.roxo { background-color: purple; }
+.azul { background-color: blue; }
+.amarelo { background-color: yellow; }
 
-.vermelho:active{
-    background-color: red;
-}
-.roxo:active{
-    background-color: purple;
-}
-.azul:active{
-    background-color: blue;
-}
-.amarelo:active{
-    background-color: yellow;
-}
+.sucesso { background-color: green !important; }
+.erro { background-color: red !important; }
